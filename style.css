@@ -1,0 +1,271 @@
+* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.plus{
+    display: flex;
+}
+
+.CONTATO-PESSOAL button{
+    color:#fff;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #000000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+h2.title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2.title span{
+    color: rgb(85, 155, 235);
+      margin-top: 100px;
+}
+
+button:hover{
+    box-shadow:   rgb(199, 199, 206);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px;
+    top:0;
+    background-color:  rgb(5, 5, 110);
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+   
+}
+
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+
+header a{
+    color: #acc7e7;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    z-index:100000;
+}
+
+header a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO TOPO SITE */
+section.topo-do-site{
+    padding: 40PX 4%;
+}
+
+section.topo-do-site.plus{
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-do-site h1 span{
+    color: #ffffff;
+}
+.topo-do-site .txt-topo-do-site p{
+    color: #ffffff;
+    margin: 40px 0px;
+    font-size: 23px;
+    
+}
+
+.topo-do-site .txt-topo-do-site p span{
+    color: rgb(85, 155, 235);
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: ari 3s ease-in-out infinite alternate;
+    margin-top: 100px;
+  
+}
+
+@keyframes ari{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS HABS */
+
+section.habilidades{
+    padding: 40px 4px;
+    font-size: 20px;
+}
+
+section.habilidades .plus{
+    gap: 60px;
+}
+
+.habilidades .hab-box{
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .hab-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(85, 155, 235);
+}
+
+.habilidades .hab-box i{
+    font-size: 70px;
+    color:rgb(85, 155, 235);
+}
+
+.habilidades .hab-box h3{
+    font-size: 28px;
+    margin: 15px 0px;
+}
+section.sobre .love{
+    display: flex;
+    align-items: center;
+}
+section.txt-sobre p{
+    margin-left: 20px;
+    
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+   
+}
+
+section.sobre .love{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 35px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:rgb(85, 155, 235);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color:  rgb(202, 202, 211);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+
+}
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000069;
+    height: 100%;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO RODAPÉ */
+
+footer{
+    padding: 60px 4%;
+    display:flex;
+    justify-content: space-between;
+    background-color:  rgb(5, 5, 110);
+}.item{
+    width: 50%;
+}
+footer  .plus{
+    justify-content: space-between;
+}
+.imagem-animada{
+    position:relative;
+    z-index: 1;
+}
+.line {
+  font-size: 20px;
+  color: #ffffff;
+
+}
